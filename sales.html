@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesheets/sales.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <script src='./js/sales.js' defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <title>Мини сайтик заказать</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <div id="header_menu">
+                <nav class="top-menu">
+                    <ul class="menu-main">
+                        <li class="left-item"><a href="./index.html">Главная</a></li>
+                        <li class="left-item"><a href="./contacts.html">Написать нам</a></li>
+                        <li class="right-item"><a href="./sales.html">Заказать</a></li>
+                        <li class="right-item"><a href="./faq.html">FAQ</a></li>
+                    </ul>
+                    <a class="navbar-logo" href="./index.html"><img src="https://html5book.ru/wp-content/uploads/2017/04/lily-logo.png"></a>
+                </nav>
+            </div>
+        </div>
+        <div id="content">
+            <div class="content_boy">
+                <div id="pricing-table">
+                    <div class="plan plan1">
+                        <div class="header">Пакет 1</div>
+                        <div class="price">$59</div>
+                        <ul>
+                            <li><b>Сосиска</b> Кол-во</li>
+                            <li><b>2 сосиски</b> Кол-во</li>
+                            <li><b>море сосисок</b> почтовых ящиков</li>
+                            <li><b>Неограничено кол-сосисщл</b> естонов</li>
+                        </ul>
+                        <a class="signup" onclick="open_popup()">Купить</a>
+                    </div>
+                    <div class="plan plan2 popular-plan">
+                        <div class="header">пакет 2</div>
+                        <div class="price">$29</div>
+                        <ul>
+                            <li><b>есто</b> место есто</li>
+                            <li><b>есто</b> тестоесто</li>
+                            <li><b>1есто</b> есто яестоестов</li>
+                            <li><b>Неестоаничено</b> естостов</li>
+                        </ul>
+                        <a class="signup" onclick="open_popup()">Купить</a>
+                    </div>
+                    <div class="plan plan3">
+                        <div class="header">пакет 3</div>
+                        <div class="price">$19</div>
+                        <ul>
+                            <li><b>3есто</b> естодисестоке</li>
+                            <li><b>2есто5естоB</b> тестоес</li>
+                            <li><b>есто</b> пестоков</li>
+                            <li><b>Неогестоно</b> пестонов</li>
+                        </ul>
+                        <a class="signup" onclick="open_popup()">Купить</a>
+                    </div>
+                    <div class="plan plan4">
+                        <div class="header">Пакет 4</div>
+                        <div class="price">$9</div>
+                        <ul>
+                            <li><b>1естоB</b> месестоисестоке</li>
+                            <li><b>естоGB</b> тестоес</li>
+                            <li><b>есто</b> почестотестоков</li>
+                            <li><b>Нестоено</b> поесто</li>
+                        </ul>
+                        <a class="signup" onclick="open_popup()">Купить</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="footer">
+                <div class="logo_footer">
+                    <h2>Лого</h2>
+                </div>
+                <div class="company-name-license">
+                    <p>© Copyright 2017 Ваша компания - All Rights Reserved</p>
+                </div>
+                <div class="text-and-headline-information">
+                    <h1 class="header-information">Инфо</h1>
+                    <p class="text-of-information">Задавайте вопросы или пишите предложения об сотрудничестве на e-mail</p>
+                </div>
+                <div class="contacts-footer">
+                    <h1 class="header-for-footer-contacts">Контакты</h1>
+                    <p class="text-of-contacts-footer">Email: info@мыло.ком </br> Skype: сайтру </br>Telegram: @сайтовый бот</p>
+                </div>
+                <div class="footer-references">
+                    <h1 class="link_title_footer">Ссылки</h1>
+                    <a class="link_1" href="">Атзыв фисбук</a>
+                    <a class="link_2" href="">Атзыв втентакле</a>
+                    <a class="link_3" href="">фирма</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="openModal" class="modalDialog">
+        <div class="menu_don" id="menu_don">
+            <a href="#close" title="Закрыть" class="close" id="close" onclick="close_popup()">x</a>
+            <div class="contact">
+                <form name="myform" id="myform" action="javascript:add_form()">
+                    <fieldset>
+                        <div class="row">
+                            <section class="col col-2">
+                                <label class="input number-field">
+                                            <i class="fa fa-append fa-user"></i>
+                                            Телефон:<input id="phone" name="phone" title="Введите номер" pattern="^((8|\+7)[\-]?)?(\(?\d{3}\)?[\-]?)?[\d\-]{7,10}$" type="text" size="20" placeholder="+(380)-96-23-345" required=""/>
+                                        </label>
+                            </section>
+                            <section class="col col-2 mail-field">
+                                <label class="input">
+                                            <i class="fa fa-append fa-envelope-o"></i>
+                                            E-mail:<input type="email" id="e-mail" placeholder="E-mail" name="e-mail" title="Напишите вашу почту" pattern="^[-._a-z0-9]+@(?:[a-z0-9][-a-z0-9]+\.)+[a-z]{2,6}$" required="">
+                                        </label>
+                            </section>
+                        </div>
+                        <a id="additional_information" onclick="additional_information()" class="additional_information">Другой способ связи</a>
+                        <section class="additional-field" id="field_additional_information">
+                            <label class="input">
+                                        <i class="fa fa-append fa-tag"></i>
+                                        Заполните:<input type="text" id="text_dop" name="text" title="Напишите как с вами связаться">
+                                    </label>
+                        </section>
+                        <section class="application-name-field" id="application-name-field">
+                            <label class="input">
+                                        <i class="fa fa-append fa-tag"></i>
+                                        Название приложения:<input type="text" id ="name_game"name="name_game"placeholder="Если оно есть.">
+                                    </label>
+                        </section>
+                        <section class="comment-field" id="comment-field-text">
+                            <label class="comment-field-text">
+                                        Комментарий пользователя:<textarea id="comment"placeholder="Дополнительная информация." name="comment"></textarea>
+                                    </label>
+                        </section>
+                        <div class="group-of-checkboxes" id="group-of-checkboxes">
+                            <label class="push-notification">
+                                 <input type="checkbox" id="is-push-included">
+                                <span class="pseudocheckbox" name="check1">Нужны ли уведомления</span>
+                            </label>
+                            <label class="update-an-existing-application">
+                                <input type="checkbox" id="is-upd">
+                                 <span class="pseudocheckbox" name="check2">Обновить существующие приложение</span>
+                            </label>
+                            <label class="publication-in-google">
+                                <input type="checkbox" id="with-publication">
+                                <span class="pseudocheckbox" name="check3">Опубликовать в google play</span>
+                            </label>
+                        </div>
+                        <button type="submit" class="button">Отправить</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+</body>
+
+</html>

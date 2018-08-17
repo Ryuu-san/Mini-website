@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesheets/contacts.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <title>Мини сайтик написать нам</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <div id="header_menu">
+                <nav class="top-menu">
+                    <ul class="menu-main">
+                        <li class="left-item"><a href="./index.html">Главная</a></li>
+                        <li class="left-item"><a href="./contacts.html">Написать нам</a></li>
+                        <li class="right-item"><a href="./sales.html">Заказать</a></li>
+                        <li class="right-item"><a href="./faq.html">FAQ</a></li>
+                    </ul>
+                    <a class="navbar-logo" href="./index.html"><img src="https://html5book.ru/wp-content/uploads/2017/04/lily-logo.png"></a>
+                </nav>
+            </div>
+        </div>
+        <div id="content">
+            <div class="content_contact_menu">
+                <form class="decor">
+                    <div class="form-left-decoration"></div>
+                    <div class="form-right-decoration"></div>
+                    <div class="circle"></div>
+                    <div class="form-inner">
+                        <h3>Написать нам</h3>
+                        <input type="text" placeholder="Имя">
+                        <input type="email" placeholder="Email" pattern="^[-._a-z0-9]+@(?:[a-z0-9][-a-z0-9]+\.)+[a-z]{2,6}$" required="">
+                        <textarea placeholder="Сообщение..." rows="3"></textarea>
+                        <button type="submit" class="button_contact_1">Отправить</button>
+                    </div>
+                </form>
+            </div>
+            <div class="content_socio">
+                <div id="share">
+                    <div class="like">Или напишите нам в соцсетях:</div>
+                    <div class="social" data-url="<?php the_permalink(); ?>" data-title="<?php the_title(); ?>">
+                        <a class="push facebook" data-id="fb" href="https://ru-ru.facebook.com/"><i class="fa fa-facebook"></i> Facebook</a>
+                        <a class="push twitter" data-id="tw" href="https://twitter.com/?lang=ru"><i class="fa fa-twitter"></i> Twitter</a>
+                        <a class="push vkontakte" data-id="vk" href="https://vk.com/durov"><i class="fa fa-vk"></i> Вконтакте</a>
+                        <a class="push google" data-id="gp" href="https://plus.google.com/discover"><i class="fa fa-google-plus"></i> Google+</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="footer">
+                <div class="logo_footer">
+                    <h2>Лого</h2>
+                </div>
+                <div class="company-name-license">
+                    <p>© Copyright 2017 Ваша компания - All Rights Reserved</p>
+                </div>
+                <div class="text-and-headline-information">
+                    <h1 class="header-information">Инфо</h1>
+                    <p class="text-of-information">Задавайте вопросы или пишите предложения об сотрудничестве на e-mail</p>
+                </div>
+                <div class="contacts-footer">
+                    <h1 class="header-for-footer-contacts">Контакты</h1>
+                    <p class="text-of-contacts-footer">Email: info@мыло.ком </br> Skype: сайтру </br>Telegram: @сайтовый бот</p>
+                </div>
+                <div class="footer-references">
+                    <h1 class="link_title_footer">Ссылки</h1>
+                    <a class="link_1" href="">Атзыв фисбук</a>
+                    <a class="link_2" href="">Атзыв втентакле</a>
+                    <a class="link_3" href="">фирма</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
