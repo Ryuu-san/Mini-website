@@ -1,10 +1,11 @@
-﻿html {
+html {
     min-height: 100%;
 }
 
 body {
     margin: 0;
     padding: 0;
+    position: absolute;
     width: 100%;
     overflow-x: hidden;
     color: #435757;
@@ -13,7 +14,7 @@ body {
 }
 
 #header {
-    position: fixed;
+    position: absolute;
     width: 100%;
     background-image: url(.././assets/sales_background.jpg);
     min-height: 64px;
@@ -531,7 +532,7 @@ body {
     .first-page-block img {
         left: 3.5%;
     }
-    .content_text_and_title .text_and_title {
+    .text-and-title-of-the-first-block .text_and_title {
         width: 100px;
         position: absolute;
         top: -765px;
